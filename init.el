@@ -9,7 +9,7 @@
 (package-initialize)
 
 ; packages I use
-(setq package-list '(evil-leader evil zenburn-theme neotree))
+(setq package-list '(evil-leader evil magit zenburn-theme neotree))
 
 ; fetch the list of packages available 
 (unless package-archive-contents
