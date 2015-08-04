@@ -30,7 +30,7 @@
 (require 'my-neotree)
 (require 'my-ibuffer)
 (require 'my-dired)
-(require 'my-erc)
+;(require 'my-erc)
 (require 'my-magit)
 
 (require 'tramp)
