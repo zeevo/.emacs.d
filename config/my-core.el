@@ -14,10 +14,9 @@
 (scroll-bar-mode -1)
 
 ;; line break at 80 chars
-(setq fill-column 80)
+(setq-default fill-column 80)
 (setq auto-fill-mode t)
-                                        ;(setq text-mode-hook 'turn-on-auto-fill)
-                                        ;(setq default-major-mode 'text-mode)
+(setq-default auto-fill-function 'do-auto-fill)
 
 ;; theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
