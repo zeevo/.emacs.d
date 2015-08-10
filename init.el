@@ -41,7 +41,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(backup-by-copying t)
- '(backup-directory-alist (quote (("." . "~/.garbage"))))
+ '(backup-directory-alist (quote (("." . "~/.garbage/"))))
  '(custom-safe-themes
    (quote
     ("c037a590a8097fb519d8b6a3f3f9836baa24431f378bac998968cfd2de58ff87"
