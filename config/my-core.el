@@ -5,8 +5,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;; font
-                                        ;(set-frame-font "Terminus-12")
-                                        ;(set-face-attribute 'default nil :height 130)
+(set-frame-font "Terminus-12")
+(set-face-attribute 'default nil :height 130)
 
 ;; disable bars
 (menu-bar-mode -1)
@@ -41,7 +41,7 @@
 
 ;; don't litter my filesystem
 ;; garbage files
-(defconst garbage-files-directory "~/.garbage")
+(defconst garbage-files-directory "~/.garbage/")
 (setq
  backup-by-copying t      ; don't clobber symlinks
  delete-old-versions t
@@ -58,14 +58,14 @@
 
 ;; Only scroll one line when near the bottom of the screen, instead
 ;; of jumping the screen around.
-                                        ;(setq scroll-conservatively 9999
-                                        ;      scroll-preserve-screen-position t)
+;(setq scroll-conservatively 9999
+;      scroll-preserve-screen-position t)
 
 ;; UTF-8 everything!
-(set-terminal-coding-system 'utf-8)
-(set-keyboard-coding-system 'utf-8)
-(set-selection-coding-system 'utf-8)
-(prefer-coding-system 'utf-8)
+;(set-terminal-coding-system 'utf-8)
+;(set-keyboard-coding-system 'utf-8)
+;(set-selection-coding-system 'utf-8)
+;(prefer-coding-system 'utf-8)
 
 ;; 1 space please
 (setq sentence-end-double-space nil)
