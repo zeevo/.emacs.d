@@ -5,8 +5,11 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;; font
-(set-frame-font "Terminus-12")
-(set-face-attribute 'default nil :height 130)
+(defun font-exists-p (font)
+  "check if font exists"
+  (if (null (x-list-fonts font)) nil t))
+(if (font-exists-p "Terminus-12")
+    (set-face-attribute 'default nil :font "Terminus-12" :height 130))
 
 ;; disable bars
 (menu-bar-mode -1)

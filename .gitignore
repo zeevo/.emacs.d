@@ -1,0 +1,8 @@
+.cache/
+auto-save-list/
+config/my-erc.el
+elpa/
+eshell/
+games/
+image-dired/
+tramp
