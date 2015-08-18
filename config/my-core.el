@@ -4,7 +4,7 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;; font
+;; font
 (defun font-exists-p (font)
   "check if font exists"
   (if (null (x-list-fonts font)) nil t))
