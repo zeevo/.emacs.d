@@ -61,8 +61,8 @@
 
 ;; Only scroll one line when near the bottom of the screen, instead
 ;; of jumping the screen around.
-;(setq scroll-conservatively 9999
-;      scroll-preserve-screen-position t)
+(setq scroll-conservatively 9999
+      scroll-preserve-screen-position t)
 
 ;; UTF-8 everything!
 ;(set-terminal-coding-system 'utf-8)
