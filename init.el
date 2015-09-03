@@ -1,3 +1,9 @@
+;;
+;; init.el
+;; shane o'neill
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (require 'package)
 (push '("marmalade" . "http://marmalade-repo.org/packages/")
               package-archives)
@@ -9,7 +15,7 @@
 (package-initialize)
 
 ; packages I use
-(setq package-list '(evil-leader evil magit zenburn-theme neotree))
+(setq package-list '(evil-leader evil zenburn-theme neotree))
 
 ; fetch the list of packages available 
 (unless package-archive-contents
@@ -31,7 +37,6 @@
 (require 'my-ibuffer)
 (require 'my-dired)
 ;(require 'my-erc)
-(require 'my-magit)
 
 (require 'tramp)
 
@@ -45,8 +50,7 @@
  '(custom-safe-themes
    (quote
     ("c037a590a8097fb519d8b6a3f3f9836baa24431f378bac998968cfd2de58ff87"
-     default)))
- '(erc-nick "sho"))
+     default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
