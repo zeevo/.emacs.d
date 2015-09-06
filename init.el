@@ -5,6 +5,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (require 'package)
+
 (push '("marmalade" . "http://marmalade-repo.org/packages/")
               package-archives)
 (push '("melpa" . "http://melpa.milkbox.net/packages/")
@@ -15,7 +16,7 @@
 (package-initialize)
 
 ; packages I use
-(setq package-list '(evil-leader evil zenburn-theme neotree))
+(setq package-list '(use-package evil-leader evil zenburn-theme neotree))
 
 ; fetch the list of packages available 
 (unless package-archive-contents
