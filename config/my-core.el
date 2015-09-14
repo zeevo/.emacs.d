@@ -112,7 +112,7 @@
 
 ;; reindent entire file
 (defun indent-entire-buffer ()
-  "indent whole buffer"
+  "indent entire buffer"
   (interactive)
   (delete-trailing-whitespace)
   (indent-region (point-min) (point-max) nil)
