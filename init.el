@@ -16,7 +16,7 @@
 (package-initialize)
 
 ; packages I use
-(setq package-list '(use-package evil-leader evil zenburn-theme neotree))
+(setq package-list '(use-package auctex evil-leader evil zenburn-theme neotree))
 
 ; fetch the list of packages available 
 (unless package-archive-contents
@@ -37,6 +37,7 @@
 (require 'my-neotree)
 (require 'my-ibuffer)
 (require 'my-dired)
+(require 'my-auctex)
 ;(require 'my-erc)
 
 (require 'tramp)
