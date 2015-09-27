@@ -5,8 +5,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (require 'flyspell)
+(require 'tex)
+(TeX-global-PDF-mode t)
 
-(setq TeX-PDF-mode t)
 
 ;; spell-checking
 (setq-default ispell-program-name "aspell")
