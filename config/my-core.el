@@ -29,7 +29,7 @@
 
 ;; theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'zenburn t)
+(load-theme 'solarized-dark t)
 
 ;; lockfiles are evil.
 (setq create-lockfiles nil)
