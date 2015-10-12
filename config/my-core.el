@@ -25,7 +25,7 @@
 ;; line break at 80 chars
 (setq-default fill-column 80)
 (setq auto-fill-mode t)
-(setq-default auto-fill-function 'do-auto-fill)
+(add-hook 'prog-mode-hook 'auto-fill-mode)
 
 ;; theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
@@ -71,10 +71,10 @@
       scroll-preserve-screen-position t)
 
 ;; UTF-8 everything!
-;(set-terminal-coding-system 'utf-8)
-;(set-keyboard-coding-system 'utf-8)
-;(set-selection-coding-system 'utf-8)
-;(prefer-coding-system 'utf-8)
+                                        ;(set-terminal-coding-system 'utf-8)
+                                        ;(set-keyboard-coding-system 'utf-8)
+                                        ;(set-selection-coding-system 'utf-8)
+                                        ;(prefer-coding-system 'utf-8)
 
 ;; 1 space please
 (setq sentence-end-double-space nil)

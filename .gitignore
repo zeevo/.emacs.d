@@ -6,3 +6,5 @@ eshell/
 games/
 image-dired/
 tramp
+config/my-magit.el
+url/

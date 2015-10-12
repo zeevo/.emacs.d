@@ -39,7 +39,7 @@
 (require 'my-ibuffer)
 (require 'my-dired)
 (require 'my-auctex)
-;(require 'my-erc)
+(require 'my-erc)
 
 (require 'tramp)
 
