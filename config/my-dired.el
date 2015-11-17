@@ -259,6 +259,10 @@ Otherwise, returns nil."
   (evil-define-key 'normal dired-mode-map "k" 'my-dired-previous-line)
   (evil-define-key 'normal dired-mode-map (kbd "TAB") 'dired-hide-subdir)
   (evil-define-key 'normal dired-mode-map (kbd "<backspace>") 'my-dired-remove-from-buffer)
+  ;; ranger implementations (semi-new)
+  (evil-define-key 'normal dired-mode-map "y" 'dired-ranger-copy)
+  (evil-define-key 'normal dired-mode-map "o" 'dired-ranger-move)
+  (evil-define-key 'normal dired-mode-map "p" 'dired-ranger-paste)
   )
 
 (provide 'my-dired)
