@@ -15,7 +15,7 @@
 (package-initialize)
 
 ; packages I use
-(setq package-list '(use-package flyspell auctex evil-leader evil zenburn-theme
+(setq package-list '(use-package evil-org flyspell auctex evil-leader evil zenburn-theme
                       solarized-theme neotree dired-hacks-utils dired-ranger))
 
 ; fetch the list of packages available 
@@ -40,6 +40,7 @@
 (require 'my-dired)
 (require 'my-auctex)
 (require 'my-erc)
+(require 'my-orgmode)
 
 (require 'tramp)
 
