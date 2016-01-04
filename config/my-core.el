@@ -16,6 +16,9 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
+;; hide welcome screen
+(setq inhibit-splash-screen t)
+
 ;; escape quits
 (define-key isearch-mode-map [escape] 'isearch-abort)   ;; isearch
 (define-key isearch-mode-map "\e" 'isearch-abort)   ;; \e seems to work better for terminals
