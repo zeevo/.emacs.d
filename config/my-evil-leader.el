@@ -15,6 +15,6 @@
 (evil-leader/set-key "," 'other-window)
 (evil-leader/set-key "b" 'ibuffer)
 (evil-leader/set-key "i" 'indent-entire-buffer)
-(evil-leader/set-key "t" 'eshell)
+(evil-leader/set-key "t" 'shell)
 
 (provide 'my-evil-leader)

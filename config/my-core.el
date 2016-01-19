@@ -1,6 +1,5 @@
 ;;
 ;; my-core.el
-;; shane o'neill
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -15,6 +14,9 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
+
+;; hide welcome screen
+(setq inhibit-splash-screen t)
 
 ;; escape quits
 (define-key isearch-mode-map [escape] 'isearch-abort)   ;; isearch
