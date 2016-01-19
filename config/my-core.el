@@ -9,7 +9,7 @@
   "check if font exists"
   (if (null (x-list-fonts font)) nil t))
 (if (font-exists-p "Terminus-12")
-    (set-face-attribute 'default nil :font "Terminus-12" :height 130))
+    (set-face-attribute 'default nil :font "Terminus-11"))
 
 ;; disable bars
 (menu-bar-mode -1)
@@ -42,6 +42,9 @@
                 'linum-mode)
 ;; prompt change
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+;; inhibit splash screen
+(setq inhibit-startup-message t)
 
 ;; also tabs are evil
 (setq-default indent-tabs-mode nil)
