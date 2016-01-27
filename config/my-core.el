@@ -15,6 +15,9 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
+;; python3 as default python shell
+(setq python-shell-interpreter "python3")
+
 ;; hide welcome screen
 (setq inhibit-splash-screen t)
 
