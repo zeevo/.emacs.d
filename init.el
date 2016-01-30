@@ -15,8 +15,9 @@
 (package-initialize)
 
 ; packages I use
-(setq package-list '(use-package evil-org flyspell auctex evil-leader evil zenburn-theme
-                      solarized-theme neotree dired-hacks-utils dired-ranger))
+(setq package-list '(use-package magit evil-magit evil-org flyspell auctex
+                      evil-leader evil zenburn-theme solarized-theme neotree
+                      dired-hacks-utils dired-ranger))
 
 ; fetch the list of packages available 
 (unless package-archive-contents

@@ -8,3 +8,9 @@ image-dired/
 tramp
 config/my-magit.el
 url/
+TODO.org
+bookmarks
+config/test.txt
+init.el.bak
+npemacs.d/
+plugins/
