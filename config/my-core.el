@@ -99,11 +99,6 @@
                                 --x509cafile /home/ootput/.private/certs/CAs.pem 
                                 --x509certfile /home/ootput/.private/certs/nick.pem -p %p %h" 
                     "gnutls-cli --priority secure256 -p %p %h"))
-; encrypted-erc
-(defun eerc ()
-  "Connect to IRC."
-  (interactive)
-  (erc-tls :server "irc.rizon.net" :port 6697))
 
 ;; from <https://github.com/bling/dotemacs/>
 (defmacro after (feature &rest body)
