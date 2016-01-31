@@ -7,8 +7,8 @@
 (defun font-exists-p (font)
   "check if font exists"
   (if (null (x-list-fonts font)) nil t))
-(if (font-exists-p "Terminus-12")
-    (set-face-attribute 'default nil :font "Terminus-11"))
+;(if (font-exists-p "Terminus-12")
+;    (set-face-attribute 'default nil :font "Terminus-11"))
 
 ;; disable bars
 (menu-bar-mode -1)
@@ -26,7 +26,6 @@
 (define-key isearch-mode-map "\e" 'isearch-abort)   ;; \e seems to work better for terminals
 (global-set-key [escape] 'keyboard-escape-quit)         ;; everywhere else
 
-
 ;; line break at 80 chars
 (setq-default fill-column 80)
 (setq auto-fill-mode t)
@@ -34,8 +33,8 @@
 
 ;; theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-;(load-theme 'solarized-dark t)
-(load-theme 'zenburn t)
+(load-theme 'solarized-dark t)
+;(load-theme 'zenburn t)
 
 ;; lockfiles are evil.
 (setq create-lockfiles nil)
