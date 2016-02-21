@@ -50,9 +50,6 @@
 ;; inhibit splash screen
 (setq inhibit-startup-message t)
 
-;; also tabs are evil
-(setq-default indent-tabs-mode nil)
-
 ;; number columns in the status bar
 (column-number-mode)
 
