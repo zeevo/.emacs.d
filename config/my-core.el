@@ -15,8 +15,14 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
+;; helm
+(global-set-key (kbd "M-x") 'helm-M-x)
+
 ;; python3 as default python shell
 (setq python-shell-interpreter "python3")
+
+;; parenthesis matching
+(show-paren-mode 1)
 
 ;; hide welcome screen
 (setq inhibit-splash-screen t)
