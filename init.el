@@ -16,7 +16,7 @@
 
 ; packages I use
 (setq package-list '(use-package auto-complete helm web-mode simple-httpd
-                      js2-mode skewer magit evil-magit evil-org flyspell
+                      js2-mode skewer-mode magit evil-magit evil-org flyspell
                       evil-leader evil zenburn-theme solarized-theme neotree
                       dired-hacks-utils dired-ranger))
 
@@ -56,7 +56,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(js2-strict-missing-semi-warning t))
+ '(custom-safe-themes
+   (quote
+    ("d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
+ '(js2-strict-missing-semi-warning t)
+ '(web-mode-enable-auto-closing t)
+ '(web-mode-enable-auto-quoting nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
