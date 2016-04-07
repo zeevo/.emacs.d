@@ -8,7 +8,7 @@
   "check if font exists"
   (if (null (x-list-fonts font)) nil t))
 ;(if (font-exists-p "Terminus-12")
-;    (set-face-attribute 'default nil :font "Terminus-11"))
+;    (set-face-attribute 'default nil :font "Terminus-13"))
 
 ;; disable bars
 (menu-bar-mode -1)
@@ -39,8 +39,8 @@
 
 ;; theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'solarized-dark t)
-;(load-theme 'zenburn t)
+;(load-theme 'solarized-dark t)
+(load-theme 'zenburn t)
 
 ;; lockfiles are evil.
 (setq create-lockfiles nil)
