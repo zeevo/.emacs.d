@@ -40,7 +40,15 @@
 ;; theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 ;(load-theme 'solarized-dark t)
-(load-theme 'zenburn t)
+;(load-theme 'zenburn t)
+(load-theme 'spacemacs-dark)
+
+;; paren-mode
+(require 'paren)
+(set-face-background 'show-paren-match (face-background 'default))
+(set-face-foreground 'show-paren-match "#def")
+(set-face-attribute 'show-paren-match nil :weight 'extra-bold)
+(custom-set-faces '(show-paren-match ((t (:background "#292b2e" :foreground "lawn green" :weight extra-bold)))))
 
 ;; lockfiles are evil.
 (setq create-lockfiles nil)
