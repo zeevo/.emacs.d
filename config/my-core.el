@@ -37,11 +37,15 @@
 (setq auto-fill-mode t)
 (add-hook 'prog-mode-hook 'auto-fill-mode)
 
+;; powerline
+(require 'powerline)
+(powerline-default-theme)
+
 ;; theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 ;(load-theme 'solarized-dark t)
 ;(load-theme 'zenburn t)
-(load-theme 'spacemacs-dark)
+(load-theme 'spacemacs-dark t)
 
 ;; paren-mode
 (require 'paren)
