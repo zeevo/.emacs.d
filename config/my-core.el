@@ -36,6 +36,8 @@
 (setq-default fill-column 80)
 (setq auto-fill-mode t)
 (add-hook 'prog-mode-hook 'auto-fill-mode)
+(add-hook 'prog-mode-hook 'electric-pair-mode)
+(add-hook 'prog-mode-hook 'hl-line-mode)
 
 ;; powerline
 (require 'powerline)
@@ -149,5 +151,9 @@
   (delete-trailing-whitespace)
   (indent-region (point-min) (point-max) nil)
   (untabify (point-min) (point-max)))
+
+;; markdown mode
+(custom-set-variables
+ '(markdown-command "/usr/bin/pandoc"))
 
 (provide 'my-core)
