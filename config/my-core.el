@@ -7,8 +7,8 @@
 (defun font-exists-p (font)
   "check if font exists"
   (if (null (x-list-fonts font)) nil t))
-;(if (font-exists-p "Terminus-12")
-;    (set-face-attribute 'default nil :font "Terminus-13"))
+(if (font-exists-p "Terminus-12")
+    (set-face-attribute 'default nil :font "Terminus-12"))
 
 ;; disable bars
 (menu-bar-mode -1)
