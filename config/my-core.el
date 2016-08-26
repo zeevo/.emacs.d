@@ -7,9 +7,10 @@
 (defun font-exists-p (font)
   "check if font exists"
   (if (null (x-list-fonts font)) nil t))
+(when window-system
 (if (font-exists-p "Terminus-12")
     (set-face-attribute 'default nil :font "Terminus-12"))
-
+)
 ;; disable bars
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -23,6 +24,9 @@
 
 ;; parenthesis matching
 (show-paren-mode 1)
+
+;; save and restore sessions
+(desktop-save-mode 1)
 
 ;; hide welcome screen
 (setq inhibit-splash-screen t)
