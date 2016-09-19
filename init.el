@@ -16,7 +16,7 @@
 
 ; packages I use
 (setq package-list '(use-package auto-complete helm web-mode 
-                      js2-mode magit powerline evil-magit evil-org flyspell
+                      js2-mode magit powerline auctex evil-magit evil-org flyspell
                       evil-leader evil spacemacs-theme zenburn-theme solarized-theme neotree
                       dired-hacks-utils dired-ranger))
 
@@ -46,6 +46,7 @@
 (require 'my-erc)
 (require 'my-orgmode)
 ;(require 'my-skewer)
+(require 'my-auctex)
 (require 'my-web-mode)
 (require 'my-auto-complete)
 
