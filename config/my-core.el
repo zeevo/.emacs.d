@@ -8,9 +8,9 @@
   "check if font exists"
   (if (null (x-list-fonts font)) nil t))
 (when window-system
-(if (font-exists-p "Terminus-12")
-    (set-face-attribute 'default nil :font "Terminus-12"))
-)
+  (if (font-exists-p "Terminus-12")
+      (set-face-attribute 'default nil :font "Terminus-12"))
+  )
 ;; disable bars
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -53,8 +53,8 @@
 
 ;; theme
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-;(load-theme 'solarized-dark t)
-;(load-theme 'zenburn t)
+                                        ;(load-theme 'solarized-dark t)
+                                        ;(load-theme 'zenburn t)
 (load-theme 'spacemacs-dark t)
 
 ;; paren-mode
@@ -80,6 +80,10 @@
 
 ;; number columns in the status bar
 (column-number-mode)
+
+;; c-style
+(setq c-default-style "linux"
+      c-basic-offset 4)
 
 ;; don't litter my filesystem
 ;; garbage files
@@ -117,11 +121,11 @@
 
 ;; erc ssl
 (setq tls-program '("openssl s_client -connect %h:%p -no_ssl2 -ign_eof
-                                      -CAfile /home/ootput/.private/certs/CAs.pem 
-                                      -cert /home/ootput/.private/certs/nick.pem" 
-                    "gnutls-cli --priority secure256 
-                                --x509cafile /home/ootput/.private/certs/CAs.pem 
-                                --x509certfile /home/ootput/.private/certs/nick.pem -p %p %h" 
+                                      -CAfile /home/ootput/.private/certs/CAs.pem
+                                      -cert /home/ootput/.private/certs/nick.pem"
+                    "gnutls-cli --priority secure256
+                                --x509cafile /home/ootput/.private/certs/CAs.pem
+                                --x509certfile /home/ootput/.private/certs/nick.pem -p %p %h"
                     "gnutls-cli --priority secure256 -p %p %h"))
 
 ;; from <https://github.com/bling/dotemacs/>
