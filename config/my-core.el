@@ -30,7 +30,7 @@
 (show-paren-mode 1)
 
 ;; save and restore sessions
-(desktop-save-mode 1)
+;(desktop-save-mode 1)
 
 ;; hide welcome screen
 (setq inhibit-splash-screen t)
@@ -55,7 +55,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
                                         ;(load-theme 'solarized-dark t)
                                         ;(load-theme 'zenburn t)
-(load-theme 'spacemacs-dark t)
+
 
 ;; paren-mode
 (require 'paren)
