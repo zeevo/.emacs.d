@@ -37,6 +37,8 @@
 (require 'evil-magit)
 (require 'js2-mode)
 
+(require 'euphoria-theme)
+
 (require 'my-evil)
 (require 'my-evil-leader)
 (require 'my-core)
@@ -50,7 +52,6 @@
 (require 'my-web-mode)
 (require 'my-auto-complete)
 
-(require 'euphoria-theme)
 
 (require 'tramp)
 (custom-set-variables
