@@ -19,6 +19,10 @@
 ;; helm
 (global-set-key (kbd "M-x") 'helm-M-x)
 
+;; smooth scrolling
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
+(setq mouse-wheel-progressive-speed nil)
+
 ;; python3 as default python shell
 (setq python-shell-interpreter "python3")
 
