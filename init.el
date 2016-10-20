@@ -29,6 +29,8 @@
     (unless (package-installed-p package)
           (package-install package)))
 
+(require 'euphoria-theme)
+
 (require 'use-package)
 
 (require 'linum-off)
@@ -37,7 +39,6 @@
 (require 'evil-magit)
 (require 'js2-mode)
 
-(require 'euphoria-theme)
 
 (require 'my-evil)
 (require 'my-evil-leader)
@@ -51,7 +52,6 @@
 (require 'my-auctex)
 (require 'my-web-mode)
 (require 'my-auto-complete)
-(require 'euphoria-theme)
 
 
 (require 'tramp)
