@@ -50,6 +50,8 @@
 (require 'my-web-mode)
 (require 'my-auto-complete)
 
+(require 'euphoria-theme)
+
 (require 'tramp)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
