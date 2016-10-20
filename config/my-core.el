@@ -78,8 +78,11 @@
 (column-number-mode)
 
 ;; c-style
-(setq c-default-style "linux"
-      c-basic-offset 4)
+(setq c-default-style "awk"
+      c-basic-offset 4
+      tab-width 4)
+
+(setq-default indent-tabs-mode nil)
 
 ;; don't litter my filesystem
 ;; garbage files
