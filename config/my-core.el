@@ -55,7 +55,11 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
                                         ;(load-theme 'solarized-dark t)
                                         ;(load-theme 'zenburn t)
+<<<<<<< HEAD
+
+=======
 (load-theme 'euphoria-theme t)
+>>>>>>> 74d02dfd7a9927104b316aa0b26b23ea07443c04
 
 ;; paren-mode
 (require 'paren)
