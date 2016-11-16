@@ -232,8 +232,8 @@ Otherwise, returns nil."
   ;;
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-  (evil-define-key 'normal dired-mode-map (kbd "C-j") 'dired-next-subdir)
-  (evil-define-key 'normal dired-mode-map (kbd "C-k") 'dired-prev-subdir)
+  ;(evil-define-key 'normal dired-mode-map (kbd "C-j") 'dired-next-subdir)
+  ;(evil-define-key 'normal dired-mode-map (kbd "C-k") 'dired-prev-subdir)
   (evil-define-key 'normal dired-mode-map "h" 'my-dired-up-directory)
   ;; default
   ;; (evil-define-key 'normal dired-mode-map "l" 'my-dired-interact-with-file)
