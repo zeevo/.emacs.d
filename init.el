@@ -18,7 +18,7 @@
 (setq package-list '(use-package auto-complete helm web-mode 
                       js2-mode magit powerline auctex latex-preview-pane evil-magit evil-org flyspell
                       evil-leader evil spacemacs-theme fireplace
-                      grandshell-theme zenburn-theme solarized-theme neotree
+                      grandshell-theme jade-mode zenburn-theme solarized-theme neotree
                       dired-hacks-utils dired-ranger))
 
 ; fetch the list of packages available 
