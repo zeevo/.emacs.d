@@ -15,13 +15,13 @@
 (package-initialize)
 
 ; packages I use
-(setq package-list '(use-package auto-complete helm web-mode 
+(setq package-list '(use-package auto-complete helm web-mode
                       js2-mode magit powerline auctex latex-preview-pane evil-magit evil-org flyspell
                       evil-leader evil spacemacs-theme fireplace
-                      grandshell-theme jade-mode zenburn-theme solarized-theme neotree
+                      markdown-mode grandshell-theme jade-mode zenburn-theme solarized-theme neotree
                       dired-hacks-utils dired-ranger))
 
-; fetch the list of packages available 
+; fetch the list of packages available
 (unless package-archive-contents
   (package-refresh-contents))
 
@@ -29,6 +29,12 @@
 (dolist (package package-list)
     (unless (package-installed-p package)
           (package-install package)))
+
+; global org file location
+(global-set-key (kbd "C-c o")
+                (lambda () (interactive) (find-file "~/organize/notes.org")))
+
+(setq org-default-notes-file "~/organize/notes.org")
 
 (require 'use-package)
 
