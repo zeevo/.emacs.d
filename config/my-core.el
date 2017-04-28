@@ -56,7 +56,7 @@
                                         ;(load-theme 'solarized-dark t)
                                         ;(load-theme 'zenburn t)
 
-;(load-theme 'spacemacs-dark t)
+(load-theme 'spacemacs-dark t)
 
 ;; paren-mode
 (require 'paren)
