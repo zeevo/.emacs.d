@@ -41,7 +41,7 @@
 (global-set-key [escape] 'keyboard-escape-quit)         ;; everywhere else
 
 ;; global magit-status keybind
-(global-set-key (kbd "C-c g") 'magit-status)
+(global-set-key (kbd "C-x g") 'magit-status)
 
 
 ;; line break at 80 chars
