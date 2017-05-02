@@ -40,6 +40,10 @@
 (define-key isearch-mode-map "\e" 'isearch-abort)   ;; \e seems to work better for terminals
 (global-set-key [escape] 'keyboard-escape-quit)         ;; everywhere else
 
+;; global magit-status keybind
+(global-set-key (kbd "C-c g") 'magit-status)
+
+
 ;; line break at 80 chars
 (setq-default fill-column 80)
 (setq auto-fill-mode t)
