@@ -43,6 +43,8 @@
 ;; global magit-status keybind
 (global-set-key (kbd "C-x g") 'magit-status)
 
+;; js2-mode for javascript
+(add-to-list 'auto-mode-alist (cons (rx ".js" eos) 'js2-mode))
 
 ;; line break at 80 chars
 (setq-default fill-column 80)
