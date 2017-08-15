@@ -8,9 +8,14 @@
   "check if font exists"
   (if (null (x-list-fonts font)) nil t))
 (when window-system
-  (if (font-exists-p "Terminus-12")
-      (set-face-attribute 'default nil :font "Terminus-12"))
+  (if (font-exists-p "Source Code Pro")
+      (set-face-attribute 'default nil
+                          :font "Source Code Pro"
+                          :height 100
+                          :weight 'normal
+                          :width 'normal))
   )
+
 ;; disable bars
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -30,7 +35,7 @@
 (show-paren-mode 1)
 
 ;; save and restore sessions
-;(desktop-save-mode 1)
+                                        ;(desktop-save-mode 1)
 
 ;; hide welcome screen
 (setq inhibit-splash-screen t)
